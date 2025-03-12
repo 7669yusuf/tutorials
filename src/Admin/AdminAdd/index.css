@@ -1,0 +1,129 @@
+.add-product-container {
+  width: 90%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading Styling */
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* Error Message Styling */
+p {
+  color: red;
+  font-size: 14px;
+}
+
+/* Form Layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Input Fields */
+input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  width: 100%; /* Make inputs full width */
+}
+
+/* Buttons */
+button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%; /* Make buttons full width */
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Delete Button */
+.delete-nav-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.delete-nav-button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .add-product-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button,
+  .delete-nav-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Extra responsiveness for very small screens */
+@media screen and (max-width: 480px) {
+  .add-product-container {
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 0;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button,
+  .delete-nav-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

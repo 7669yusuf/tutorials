@@ -1,0 +1,168 @@
+/* Full Page Styling */
+.full-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #f8f9fa, #e3e7ed);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .full-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  .container {
+    padding-right: 0;
+    max-width: 90%;
+  }
+
+  .shop-now-button {
+    font-size: 22px;
+    padding: 12px 20px;
+  }
+
+  .image-container {
+    margin-top: 20px;
+  }
+
+  .main-image {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .container {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .shop-now-button {
+    font-size: 20px;
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .shop-now-button {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  .main-image {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
+
+/* Navbar Enhancements */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 15px;
+  color: #007bff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #007bff;
+}
+
+/* Left Section: Text Content */
+.container {
+  max-width: 500px;
+  text-align: left;
+  padding-right: 50px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Shop Now Button */
+.shop-now-button {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  color: white;
+  padding: 14px 24px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.shop-now-button:hover {
+  transform: scale(1.08);
+  background: linear-gradient(90deg, #0056b3, #003f7f);
+}
+
+/* Right Section: Image */
+.image-container {
+  position: relative;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.main-image:hover {
+  transform: scale(1.05);
+}

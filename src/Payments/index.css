@@ -1,0 +1,67 @@
+/* index.css */
+.payment-container {
+    width: 400px; /* Adjust width as needed */
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif; /* Choose a readable font */
+  }
+  
+  .payment-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .payment-method label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .payment-container input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .payment-container input[type="text"],
+  .payment-container input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .payment-container input[type="text"]:focus,
+  .payment-container input[type="password"]:focus {
+    border-color: #007bff; /* Highlight on focus */
+    outline: none;
+  }
+  
+  .payment-container button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .payment-container button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: #d9534f; /* Red for error messages */
+    margin-bottom: 10px;
+  }
+  
+  .success {
+    color: #5cb85c; /* Green for success messages */
+    margin-bottom: 10px;
+  }

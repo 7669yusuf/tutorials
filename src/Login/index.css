@@ -1,0 +1,138 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+/* Center the login container */
+.login-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/18/17/14/cloth-1835894_1280.jpg"); /* Replace with your background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/* Login card */
+.login-form {
+  background: rgba(255, 255, 255, 0.15); /* Light transparent white */
+  backdrop-filter: blur(15px);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* App title */
+.app-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.trendz-highlight {
+  color: #007bff;
+}
+
+/* Input groups */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+.input-group input:focus {
+  border: 1px solid #007bff;
+  box-shadow: 0px 0px 6px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Login button */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 91, 187, 0.5);
+}
+
+.login-box {
+  position: relative;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+}
+
+/* Error & Success messages */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Image section */
+.image-section {
+  display: none; /* Hide on small screens */
+}
+
+.shopping-image {
+  width: 50%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .login-container {
+    flex-direction: row;
+  }
+
+  .login-form {
+    width: 400px;
+  }
+
+  .image-section {
+    display: block;
+  }
+}

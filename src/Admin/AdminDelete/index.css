@@ -1,0 +1,107 @@
+.admin-container {
+  max-width: 90%;
+  width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+/* Table Headers & Data Cells */
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Header Styling */
+th {
+  background-color: #f4f4f4;
+}
+
+/* Add Button */
+.add-btn {
+  background-color: green;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.add-btn:hover {
+  background-color: darkgreen;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: red;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+/* Responsive Table */
+@media screen and (max-width: 768px) {
+  .admin-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto; /* Enables horizontal scrolling for small screens */
+    white-space: nowrap;
+  }
+
+  th, td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .add-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .delete-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+/* Extra Small Screens */
+@media screen and (max-width: 480px) {
+  th, td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .add-btn,
+  .delete-btn {
+    width: 100%; /* Make buttons full width */
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+}
